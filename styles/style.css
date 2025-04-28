@@ -13,4 +13,39 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--main-font);
+    background-image: var(--bg-page, url(/images/background.png));
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  min-block-size: 100dvb;
+  inline-size: clamp(320px, 100vw, 1440px);
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--accent-font), sans-serif;
+}
+
+.header__mobile {
+  inline-size: var(--all-width);
+}
+
+.header__title {
+  font-size: clamp(3.0625rem, 2.7353rem + 1.4747vw, 4.0625rem);
+  text-transform: var(--text-title, uppercase);
+}
+
+.header__title__description {
+  font-size: clamp (0.875rem, 0.691rem + 0.8295vw, 1.4375rem);
+  text-transform: var(--text-title, uppercase);
 }
