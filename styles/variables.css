@@ -4,7 +4,16 @@
     --accent-font: "PressStart2P";
     --wght-text: 400;
     --wght-title: 700;
+    --text-size: 18px;
+    --card-title-size: 18px;
     --all-width: 100%;
     --bg-page: url(/images/background.png);
     --text-title: uppercase;
+    --title-gap: 20px;
+    --header-title-padding: 40px;
+    --card-title-padding: 10px;
+    --card-block-padding: 3px;
+    --card-description-padding: 25px;
+    --card-description-gap: 27px;
+
 }
