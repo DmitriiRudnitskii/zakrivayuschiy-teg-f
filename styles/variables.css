@@ -5,15 +5,23 @@
     --wght-text: 400;
     --wght-title: 700;
     --text-size: 18px;
+    --button-text-size: 14px;
     --card-title-size: 18px;
     --all-width: 100%;
     --bg-page: url(/images/background.png);
     --text-title: uppercase;
     --title-gap: 20px;
-    --header-title-padding: 40px;
     --card-title-padding: 10px;
-    --card-block-padding: 3px;
-    --card-description-padding: 25px;
-    --card-description-gap: 27px;
+    --card-title-padding-block: 3px;
+    --card-description-padding: 24px;
+    --card-description-gap: 30.5px;
+    --card-description-lh: 1.16;
+    --card-description-margin: 25px;
+    --main-color: #000;
+    --button-gap: 7px;
+    --card-margin-block-end: 49px;
+    --card-pading-block-end: 25px;
+    --main-border: 2px solid #000;
+    --header-margin-block: 100px
 
 }
