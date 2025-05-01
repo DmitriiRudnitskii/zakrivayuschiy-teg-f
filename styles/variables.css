@@ -5,6 +5,7 @@
     --wght-text: 400;
     --wght-title: 700;
     --text-size: 18px;
+    --decorated-size: 14px;
     --button-text-size: 14px;
     --card-title-size: 18px;
     --all-width: 100%;
@@ -14,14 +15,14 @@
     --card-title-padding: 10px;
     --card-title-padding-block: 3px;
     --card-description-padding: 24px;
-    --card-description-gap: 30.5px;
-    --card-description-lh: 1.16;
+    --card-description-gap: 25px;
+    --card-description-lh: 1.17;
     --card-description-margin: 25px;
     --main-color: #000;
     --button-gap: 7px;
-    --card-margin-block-end: 49px;
     --card-pading-block-end: 25px;
     --main-border: 2px solid #000;
-    --header-margin-block: 100px
+    --header-margin-block: 100px;
+    --stroke-color: #fff;
 
 }
