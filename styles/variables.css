@@ -15,7 +15,7 @@
     --card-title-padding: 10px;
     --card-title-padding-block: 3px;
     --card-description-padding: 24px;
-    --card-description-gap: 25px;
+    --card-description-gap: 27px;
     --card-description-lh: 1.17;
     --card-description-margin: 25px;
     --main-color: #000;
@@ -24,5 +24,10 @@
     --main-border: 2px solid #000;
     --header-margin-block: 100px;
     --stroke-color: #fff;
+}
+@media (width<= 375px) {
+    :root {
+        --card-description-gap: 25px;
 
+    }
 }
