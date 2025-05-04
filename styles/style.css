@@ -172,3 +172,63 @@
   align-items: center;
   padding-inline-start: 18px;
   border: var(--main-border, 2px solid #000);
+}
+
+
+.save-dialog[open] {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inline-size: 357px;
+  min-block-size: 193px;
+  inset-inline-start: 0;
+  inset-block-end: 0;
+  transition: opacity 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  border: var(--main-border, 2px solid #000);
+  gap: 30px;
+}
+
+
+
+.save-dialog__description {
+  display: flex;
+  gap: 20px;
+}
+
+.save-dialog__description-text {
+  text-transform: uppercase;
+  line-height: 150%;
+
+}
+
+
+
+.save-dialog:not([open]) {
+pointer-events: none;
+opacity: 0;
+}
+
+.save-dialog[open]::backdrop {
+    backdrop-filter: brightness(50%);
+}
+
+.save-dialog__button{
+  padding: 9px 17px;
+  inline-size: clamp(257px, 50vw, 293px);
+  block-size: 38px;
+  background-color: transparent;
+  border: var(--main-border, 2px solid #000);
+}
+
+.save-dialog__button-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width<=375px) {
+  
+}
