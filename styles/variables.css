@@ -28,6 +28,7 @@
   --header-margin-block: 100px;
   --stroke-color: #fff;
   --main-bg-color: #fff;
+  --button-margin: 25px;
 }
 @media (width<= 375px) {
   :root {
