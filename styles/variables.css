@@ -29,6 +29,7 @@
   --stroke-color: #fff;
   --main-bg-color: #fff;
   --button-margin: 25px;
+  --accent-color: #fff;
 }
 @media (width<= 375px) {
   :root {

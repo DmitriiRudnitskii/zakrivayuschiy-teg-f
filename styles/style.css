@@ -171,6 +171,9 @@
   font-size: var(--button-text-size, 14px);
   font-family: var(--accent-font), sans-serif;
   text-wrap: nowrap;
+  position: relative;
+  color: var(--accent-color, #fff);
+  mix-blend-mode: difference;
 }
 
 .content-button__icon {
@@ -178,6 +181,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  stroke: var(--accent-color, #fff);
+  position: relative;
+  mix-blend-mode: difference;
 }
 
 .content-button {
@@ -273,6 +279,36 @@
 
 .aspiration {
   filter: contrast(1.2);
+}
+
+.button {
+  position: relative;
+}
+
+.button::before {
+  display: block;
+  position: absolute;
+  content: "";
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: var(--main-color, #000);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--main-color, #000);
+  transition: box-shadow 0.3s ease;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
 }
 
 @media (width<=375px) {
