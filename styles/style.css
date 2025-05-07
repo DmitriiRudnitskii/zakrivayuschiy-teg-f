@@ -35,7 +35,7 @@
   inline-size: clamp(371px, 100vw, 700px);
   flex-direction: column;
   gap: var(--title-gap, 20px);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font, "PressStart2P"), sans-serif;
   border: var(--main-border, 2px solid #000);
   background-color: var(--main-bg-color);
 }
