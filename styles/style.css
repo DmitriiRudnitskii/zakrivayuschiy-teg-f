@@ -15,18 +15,16 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-weight: var(--wght-text, 400);
+  font-variation-settings: "wght" var(--wght-text, 400);
   inline-size: clamp(375px, 100vw, 1440px);
   margin: 0 auto;
   background-image: var(--bg-page);
   background-size: cover;
   background-attachment: fixed;
+
 }
 
-@supports (font-variation-settings: normal) {
-  .page {
-    font-variation-settings: "wght" var(--wght-text, 400);
-  }
-}
+
 
 .header {
   margin: var(--header-margin-block, 100px) auto 104.5px;
@@ -45,13 +43,9 @@
 .header__title {
   font-size: clamp(3.0625rem, 2.7353rem + 1.4747vw, 4.0625rem);
   text-transform: var(--text-title, uppercase);
-  font-weight: var(--wght-text, 400);
 }
-@supports (font-variation-settings: normal) {
-  .header__title {
-    font-variation-settings: "wght" var(--wght-text, 400);
-  }
-}
+
+
 
 .header__title-description {
   display: block;
@@ -81,18 +75,14 @@
 .card__title {
   justify-self: start;
   font-size: var(--card-title-size, 18px);
-  font-weight: var(--wght-title, 700);
   font-family: var(--main-font), sans-serif;
+  font-variation-settings: "wght" var(--wght-title, 700);
   line-height: 1.6;
   padding-block: var(--card-title-padding-block, 3px);
   padding-inline: var(--card-title-padding, 10px) 0;
 }
 
-@supports (font-variation-settings: normal) {
-  .card__title {
-    font-variation-settings: "wght" var(--wght-title, 700);
-  }
-}
+
 
 .card__description {
   display: flex;
@@ -132,17 +122,12 @@
 .card__description-text {
   font-family: var(--main-font), sans-serif;
   font-size: var(--text-size, 18px);
-  font-weight: var(--wght-text, 400);
   padding-inline: var(--card-description-padding, 25px)
     var(--card-description-padding, 25px);
   line-height: var(--card-description-lh, 1.17);
 }
 
-@supports (font-variation-settings: normal) {
-  .card__description-text {
-    font-variation-settings: "wght" var(--wght-text, 400);
-  }
-}
+
 
 .card__buttons {
   display: flex;
