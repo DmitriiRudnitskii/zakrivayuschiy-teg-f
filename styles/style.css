@@ -14,18 +14,17 @@
   min-inline-size: 375px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-weight: "wght" var(--wght-text, 400);
+  font-weight: var(--wght-text, 400);
   inline-size: clamp(375px, 100vw, 1440px);
   margin: 0 auto;
+  background-image: var(--bg-page);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-family: var(--main-font);
-    background-image: var(--bg-page);
-    background-size: cover;
-    background-attachment: fixed;
-    font-variation-settings: var(--wght-text, 400);
+    font-variation-settings: "wght" var(--wght-text, 400);
   }
 }
 
@@ -50,7 +49,7 @@
 }
 @supports (font-variation-settings: normal) {
   .header__title {
-    font-variation-settings: var(--wght-text, 400);
+    font-variation-settings: "wght" var(--wght-text, 400);
   }
 }
 
@@ -91,7 +90,7 @@
 
 @supports (font-variation-settings: normal) {
   .card__title {
-    font-variation-settings: var(--wght-title, 700);
+    font-variation-settings: "wght" var(--wght-title, 700);
   }
 }
 
@@ -141,7 +140,7 @@
 
 @supports (font-variation-settings: normal) {
   .card__description-text {
-    font-variation-settings: var(--wght-text, 400);
+    font-variation-settings: "wght" var(--wght-text, 400);
   }
 }
 
