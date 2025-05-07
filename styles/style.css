@@ -132,15 +132,34 @@
 .card__buttons {
   display: flex;
   justify-content: end;
-  gap: var(--button-gap, 7px);
+  align-items: end;
+  gap: var(--button-gap, 8px);
   padding: 0 var(--card-description-padding, 25px)
     var(--card-description-padding, 25px) 0;
 }
 
 .card__icon-button {
   background-color: transparent;
-  border: none;
+  align-self: center;
+  block-size: 38px;
+  inline-size: 40px;
+  border: 2px solid transparent;
+  padding: 0;
+}
+
+.like-ikon {
+  display: block;
+  width: 100%;    
+  height: 100%;
+  inset: 0;
   
+}
+.card__icon-button:focus {
+  outline: none;
+}
+.card__icon-button:focus-visible {
+  border: var(--main-border, 2px solid var(--main-color, #000));
+  transition: border 0.3s ease;
 }
 
 .card__like-button {
@@ -291,6 +310,10 @@
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--main-color, #000);
   transition: box-shadow 0.3s ease;
+}
+
+.sparks {
+  opacity: 0;
 }
 
 .button:hover::before {

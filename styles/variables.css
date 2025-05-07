@@ -22,14 +22,16 @@
   --card-description-lh: 1.17;
   --card-description-margin: 25px;
   --main-color: #000;
-  --button-gap: 7px;
+  --button-gap: 8px;
   --card-pading-block-end: 25px;
-  --main-border: 2px solid #000;
+  --main-border: 2px solid var(--main-color);
   --header-margin-block: 100px;
   --stroke-color: #fff;
   --main-bg-color: #fff;
   --button-margin: 25px;
   --accent-color: #fff;
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
 }
 @media (width<= 375px) {
   :root {
