@@ -207,7 +207,7 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  inline-size: clamp (341px, 80vw, 353px);
+  inline-size: clamp(341px, 30vw, 353px);
   margin: auto;
   transition: opacity 0.3s ease-in-out;
   justify-content: center;
@@ -220,7 +220,7 @@
 .save-dialog__description {
   display: flex;
   gap: 20px;
-  inline-size: clamp(257px, 80vw, 293px);
+  inline-size: clamp(257px, 50vw, 293px);
 }
 
 .save-dialog__description-icon {
@@ -234,7 +234,7 @@
 .save-dialog__description-text {
   text-transform: uppercase;
   line-height: 150%;
-  inline-size: 234px;
+  inline-size: clamp(198px, 50vw,234px);
   text-wrap: wrap;
 }
 
@@ -354,8 +354,11 @@
   }
 
   .save-dialog[open] {
-    padding: 30px 42px;
-    overflow-x: hidden;
+    padding: 32px 40px;
+    max-width: 341px;
+  }
+  .save-dialog__description {
+    gap: 20px;   
   }
 
   .save-dialog__description-icon {
