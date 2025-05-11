@@ -16,7 +16,7 @@
   font-family: var(--main-font), sans-serif;
   font-weight: var(--wght-text, 400);
   font-variation-settings: "wght" var(--wght-text, 400);
-  inline-size: clamp(375px, 100vw, 1440px);
+  inline-size: clamp(375px, 100%, 1440px);
   margin: 0 auto;
   background-image: var(
     --bg-page,
@@ -51,6 +51,7 @@
   display: block;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: var(--text-title, uppercase);
+  text-wrap: nowrap;
   inline-size: clamp(210px, 55vw, 345px);
   align-self: center;
 }
@@ -114,7 +115,8 @@
 
 @supports (text-stroke: 2px #000) or (-webkit-text-stroke: 2px #000) {
   .card__decorated-element {
-    -webkit-text-stroke: 0.05px var(--stroke-color, #fff);
+    -webkit-text-stroke: 1px var(--stroke-color, #fff);
+    text-stroke: 1px var(--stroke-color, #fff);
     text-shadow: none;
   }
 }
@@ -198,15 +200,15 @@
   border: var(--main-border, 2px solid #000);
   background-color: var(--main-bg-color, #fff);
   cursor: pointer;
+  margin-block-end: 105px;
 }
 
 .save-dialog[open] {
   display: flex;
   flex-direction: column;
   position: fixed;
-  inline-size: 357px;
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inline-size: clamp (341px, 80vw, 353px);
+  margin: auto;
   transition: opacity 0.3s ease-in-out;
   justify-content: center;
   align-items: center;
@@ -218,12 +220,14 @@
 .save-dialog__description {
   display: flex;
   gap: 20px;
-  inline-size: 100%;
+  inline-size: clamp(257px, 80vw, 293px);
 }
 
 .save-dialog__description-icon {
   display: block;
   inset: 0;
+  width: 39px;
+  height: 39px;
   align-self: center;
 }
 
@@ -339,6 +343,7 @@
     block-size: 84px;
     padding-block: 15px;
     padding-inline: 15px;
+    margin-block-end: 100px;
   }
   .content-button__icon {
     display: block;
@@ -350,5 +355,10 @@
 
   .save-dialog[open] {
     padding: 30px 42px;
+    overflow-x: hidden;
+  }
+
+  .save-dialog__description-icon {
+    min-width: 39px;
   }
 }
