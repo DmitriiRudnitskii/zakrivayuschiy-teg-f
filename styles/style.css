@@ -354,7 +354,7 @@
   }
 
   .save-dialog[open] {
-    padding: 32px 40px;
+    padding: 30px 40px;
     max-width: 341px;
   }
   .save-dialog__description {
